@@ -9,6 +9,11 @@ import UpdateCoffe from "../pages/UpdateCoffe";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import InstaPost from "../Features/InstaPost";
+import Login from "../Form/Login";
+import Register from "../Form/Register";
+import ResetPass from "../Form/ResetPass";
+import Menu from "../Pages/Menu";
+import User from "../User/User";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +53,27 @@ const router = createBrowserRouter([
       {
         path: "/Gallery",
         element: <InstaPost></InstaPost>,
+      },
+      {
+        path: "/Login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/Register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/login/resetpassword",
+        element: <ResetPass></ResetPass>,
+      },
+      {
+        path: "/Menu",
+        element: <Menu></Menu>,
+      },
+      {
+        path: "/user",
+        element: <User></User>,
+        loader: () => fetch("http://localhost:5000/user"),
       },
     ],
   },

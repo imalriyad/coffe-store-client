@@ -2,13 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
-import Layout from "./Layout/Layout";
 import router from "./Router/Router";
+import AuthProvider from "./context/AuthProvider";
+import { Toaster } from "react-hot-toast";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <Layout></Layout>
-    </RouterProvider>
+    <AuthProvider>
+      <Toaster />
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
