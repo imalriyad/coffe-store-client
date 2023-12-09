@@ -1,8 +1,11 @@
-# React + Vite
+ ### CoffeStore - a online coffe stall
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- CoffeStore is a Website where user can order various coffe.
 
-Currently, two official plugins are available:
+- There are features for adding coffee; a gallery of coffee
+ 
+- There is a gallery of different different coffe
+-  I've used these technologies Firebase, MongoDB, Node.js, Tailwind CSS, and React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Live Link : https://coffe-store-7a720.web.app
+
